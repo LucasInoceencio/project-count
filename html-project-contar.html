@@ -31,7 +31,7 @@
     <div class="flex-container alinhamento-container">
         <div class="flex-item">
             <label>&nbsp;Nome Padr&atilde;o do arquivo</label>
-			<br><input type="text" id="inputNomeArquivo" name="inputNomeArquivo" placeholder="https://www.novaxs.com.br/loja/img-travel/nome-padrao-do-arquivo-" onkeyup="habilitarBotes()" onclick="limparPlaceholderArquivo()" onfocusout="placeholderArquivo()" >
+			<br><input type="text" id="inputNomeArquivo" name="inputNomeArquivo" placeholder="https://www.novaxs.com.br/loja/img-travel/nome-padrao-do-arquivo-" onkeyup="habilitarBotoes()" onclick="limparPlaceholderArquivo()" onfocusout="placeholderArquivo()" >
         </div>
     </div>
 
@@ -40,7 +40,7 @@
         <div class="flex-item-3">
             <label>&nbsp;Extens&atilde;o do arquivo</label>
             <form>
-                <select name="inputExtensaoArquivos" id="inputExtensaoArquivos" onchange="habilitarBotes()">
+                <select name="inputExtensaoArquivos" id="inputExtensaoArquivos" onchange="habilitarBotoes()">
                     <option value=".jpg" selected="selected">&nbsp;&nbsp;JPG</option>
                     <option value=".jpeg">&nbsp;&nbsp;JPEG</option>
                     <option value=".png">&nbsp;&nbsp;PNG</option>
@@ -51,7 +51,7 @@
         <div class="flex-item-3">
             <label>&nbsp;Utiliza&ccedil;&atilde;o de zero</label>
             <form>
-                <select name="verificacaoZeros" id="verificacaoZeros" onchange="habilitarBotes()">
+                <select name="verificacaoZeros" id="verificacaoZeros" onchange="habilitarBotoes()">
                     <option value="semZeros" selected="selected">&nbsp;&nbsp;Sem Zero</option>
                     <option value="comZeros">&nbsp;&nbsp;Com Zero</option>
                 </select>
@@ -60,17 +60,15 @@
     </div>
 
     <div class="flex-container alinhamento-container">
-
         <div class="flex-item-3">
             <label>&nbsp;De</label>
-            <br><input type="number" min="1" id="inputNumberInicial" name="inputNumberInicial" onkeyup="habilitarBotes()">
+            <br><input type="number" min="1" id="inputNumberInicial" name="inputNumberInicial" onkeyup="habilitarBotoes()" onchange="habilitarBotoes()">
         </div>
 
 		<div class="flex-item-3">
             <label>&nbsp;At&eacute;</label>
-            <br><input type="number" id="inputNumberFinal" name="inputNumberFinal" onkeyup="habilitarBotes()">
+            <br><input type="number" id="inputNumberFinal" name="inputNumberFinal" onkeyup="habilitarBotoes()" onchange="habilitarBotoes()">
         </div>
-
     </div>
 
     <div class="flex-container alinhamento-container">
@@ -100,6 +98,10 @@
                 <i class="far fa-trash-alt"></i>&nbsp;Limpar
             </button>
         </div>
+    </div>
+
+    <div class="flex-container alinhamento-container" style="height: 30px;">
+        &nbsp;
     </div>
 
     <div class="flex-container alinhamento-container" style="min-height: 50px; align-items: center; text-align: center;">

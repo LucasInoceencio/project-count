@@ -7,7 +7,7 @@ function metodoGerar(){
 		document.getElementById("caixaSaida").innerHTML = text; 
 		console.log(text);
 		disableBtnGerar();
-	} else{
+	} else {
 		var result  = document.getElementById("verificacaoZeros")
 		var itemSelecionado = result.options[result.selectedIndex].value;
 		if(itemSelecionado === "comZeros") {
@@ -155,7 +155,7 @@ function enableBtnLimpar() {
 }
 
 //Função verifica campos para botão gerar
-function habilitarBotes() {
+function habilitarBotoes() {
 	var primeiroCampo = document.getElementById("inputNomeArquivo").value;
 	var segundoCampo = document.getElementById("inputNumberInicial").value;
 	var terceiroCampo = document.getElementById("inputNumberFinal").value;
