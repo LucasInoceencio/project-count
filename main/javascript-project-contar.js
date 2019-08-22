@@ -36,7 +36,9 @@ function gerarlinkComZero() {
     i++;
   }
 
-  document.getElementById("caixaSaida").innerHTML = text;
+  result = text.split("");
+  result.pop();
+  document.getElementById("caixaSaida").innerHTML = result.join("");
   console.log(text);
   disableBtnGerar();
   enableBtnCopiar();
@@ -59,8 +61,9 @@ function gerarLinkSemZero() {
     text += inputNomeArquivo + i + extensaoArquivo + "|"
     i++;
   }
-
-  document.getElementById("caixaSaida").innerHTML = text;
+  result = text.split("");
+  result.pop();
+  document.getElementById("caixaSaida").innerHTML = result.join("");
   console.log(text);
   disableBtnGerar();
   enableBtnCopiar();
