@@ -191,5 +191,5 @@ function limparPlaceholderArquivo() {
 }
 
 function placeholderArquivo() {
-  document.getElementById("inputNomeArquivo").placeholder = "https://www.novaxs.com.br/loja/img-travel/nome-padrao-do-arquivo-";
+  document.getElementById("inputNomeArquivo").placeholder = "nome-padrao-do-arquivo-";
 }
